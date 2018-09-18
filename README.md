@@ -1,7 +1,5 @@
 # Sketch Recognition
-This repository contains 
-1. a prediction model for Google's quickdraw dataset to classify sketches
-2. an Android app for demonstration  
+This repository contains a Keras model for Google's quickdraw dataset to classify sketches, an Android app for demonstration  
 and describes the whole workflow to integrate a custom model to an Android app applaying [Tensorflow Lite][4]
 
 #### Global project structure:
@@ -40,7 +38,7 @@ like dataset download, dataset instances reduction and dataset split in train an
 for all generated results (training process, images, frozen model, list of labels).
 
 #### How to prepare the dataset:
-1. Download the full dataset (ca. 40GB) via script or download a subset manually (<https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap>)
+1. Download the full dataset (ca. 40GB) via script or download a subset manually ([Link][5])
 and put the files into the "dataset" directory.
 
 2. Adapt the parameters in "split_train_test.py" to setup the directories, to reduce
@@ -83,4 +81,5 @@ Tensorflow 1.7.0 (For model conversion Tensorflow 1.7 is required!)
 [2]: https://www.tensorflow.org/tutorials/estimators/cnn
 [3]: https://github.com/amir-abdi/keras_to_tensorflow
 [4]: https://www.tensorflow.org/mobile/tflite/
+[5]: https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap
 

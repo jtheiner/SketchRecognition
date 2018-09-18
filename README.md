@@ -1,7 +1,7 @@
 # Sketch Recognition
 This repository contains 
 1. a prediction model for Google's quickdraw dataset to classify sketches
-2. an Android app for demonstration
+2. an Android app for demonstration  
 and describes the whole workflow to integrate a custom model to an Android app applaying [Tensorflow Lite][4]
 
 #### Global project structure:

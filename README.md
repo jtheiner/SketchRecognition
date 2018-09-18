@@ -5,9 +5,9 @@ This repository contains
 
 #### Global project structure:
 
-"Android":    Includes the Android Studio Project of the SketchRecognition App
-"SketchRecognition":    Directory for the complete recognition task
-"ModelTransform":    Scripts for model conversion (Keras -> Tensorflow -> TFLite)
+* "Android" folder:    Includes the Android Studio Project of the SketchRecognition App  
+ * "SketchRecognition" folder:    Directory for the complete recognition task  
+* "ModelTransform" folder:    Scripts for model conversion (Keras -> Tensorflow -> TFLite)  
 
 
 # Dataset

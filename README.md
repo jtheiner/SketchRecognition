@@ -1,7 +1,8 @@
 # Sketch Recognition
 This repository contains 
-1. a prediction model for Google's quickdraw dataset
+1. a prediction model for Google's quickdraw dataset to classify sketches
 2. an Android app for demonstration
+and describes the whole workflow to integrate a custom model to an Android app applaying [Tensorflow Lite][4]
 
 #### Global project structure:
 
@@ -81,4 +82,5 @@ Tensorflow 1.7.0 (For model conversion Tensorflow 1.7 is required!)
 [1]: https://github.com/googlecreativelab/quickdraw-dataset
 [2]: https://www.tensorflow.org/tutorials/estimators/cnn
 [3]: https://github.com/amir-abdi/keras_to_tensorflow
+[4]: https://www.tensorflow.org/mobile/tflite/
 

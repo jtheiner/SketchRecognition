@@ -1,0 +1,3 @@
+Final accuracy and top-3 accuracy:
+
+0.897575, 0.953375

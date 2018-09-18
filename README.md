@@ -31,21 +31,20 @@ The much higher top-3 accuracy using 345 classes is justified by the fact that t
 # To reproduce the presented results use this instruction
 
 #### Structure of "SketchRecognition"
-The directory "dataset" contains the data and all its subsets.
-"preparation_helper" contains Python and Shell scripts for preprocessing steps
+The folder "preparation_helper" contains Python and Shell scripts for preprocessing steps
 like dataset download, dataset instances reduction and dataset split in train and test set.
 "recognition" is the python project for the classification task. Besides it contains a "models" directory
 for all generated results (training process, images, frozen model, list of labels).
 
 #### How to prepare the dataset:
 1. Download the full dataset (ca. 40GB) via script or download a subset manually ([Link][5])
-and put the files into the "dataset" directory.
+and put the files into a "dataset" directory inside "SketchRecognition".
 
-2. Adapt the parameters in "split_train_test.py" to setup the directories, to reduce
+2. Adapt the parameters in `split_train_test.py` to setup the directories, to reduce
 the number of instances per class you want to keep and split the dataset in train and test data. Then run the script.
 
 #### Full sketch recognition task:
-The "classification.py" script contains model training, visualisation and evaluation. Before run, adapt the dataset path.
+The `classification.py` script contains model training, visualisation and evaluation. Before run, adapt the dataset path.
 The main function describes the complete workflow from preprocessing over the model training to the evaluation. So feel free to make changes. Again, you can decide how many instances you want to use for training and test in total.
 
 
@@ -60,11 +59,11 @@ Tensorflow version 1.8.0
 
 ## The Model Conversion and Integration Task
 #### How to convert the frozen Keras model to Tensorflow Lite:
-1. Convert generated Keras model (*.h5) to tensorflow frozed graph (*.pb).
-Run the nice script "keras_to_tensorflow.py" written by Amir H. Abdi (see [Repo][3]), but before specify parameters like input and output file names.
-2. Take the generated tensorflow model (*.pb) and convert it to tensorflow lite using toco. You can run the "toco.sh" script.
+1. Convert generated Keras model (\*.h5) to tensorflow frozed graph (*.pb).
+Run the nice script `keras_to_tensorflow.py` written by Amir H. Abdi (see [Repo][3]), but before specify parameters like input and output file names.
+2. Take the generated tensorflow model (\*.pb) and convert it to tensorflow lite using toco. You can run the `toco.sh` script.
 Important note: Use the correct input and output array names and also the correct input shape size.
-To inspect and verify these settings you can modify and run "pb_view.py" which loads the frozen tensorflow graph (*.pb).
+To inspect and verify these settings you can modify and run `pb_view.py` which loads the frozen tensorflow graph (\*.pb).
 
 #### How to integrate into the Android App:
 Take the generated Tensorflow Lite model (.tflite) and the related "labels.csv" which were generated in the training task and move it to androids "assets" directory.

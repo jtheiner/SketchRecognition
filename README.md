@@ -46,9 +46,8 @@ and put the files into the "dataset" directory.
 the number of instances per class you want to keep and split the dataset in train and test data. Then run the script.
 
 #### Full sketch recognition task:
-The "classification.py" script contains model training, visualisation and evaluation. Before run adapt the dataset path.
-The main function describes the complete workflow from preprocessing over the model training to the evaluation. So feel free to make changes.
-Again, you can decide how many instances you want to use for training and test in total.
+The "classification.py" script contains model training, visualisation and evaluation. Before run, adapt the dataset path.
+The main function describes the complete workflow from preprocessing over the model training to the evaluation. So feel free to make changes. Again, you can decide how many instances you want to use for training and test in total.
 
 
 #### System Environment used for this task:

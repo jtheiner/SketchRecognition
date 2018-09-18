@@ -19,10 +19,10 @@ I used a CNN architecture presented by [Tensorflow's MNIST tutorial][2] with a f
 
 # Results of sketch recognition:
 
-\# classes | \# training data | top-1 accuracy | top-3 accuracy
----------- | ---------- | ---------- | ----------
-20 | 10000 | 89.76% | 95.34%
-345 | 5000 | 65.57% | 82.71% 
+\# classes | \# training data | \# test data | top-1 accuracy | top-3 accuracy
+---------- | ---------- | ---------- | ---------- | ----------
+20 | 8000 | 2000 | 89.76% | 95.34%
+345 | 4000 | 1000 | 65.57% | 82.71% 
 
 The much higher top-3 accuracy using 345 classes is justified by the fact that there are some quite similar classes inside the dataset.
 

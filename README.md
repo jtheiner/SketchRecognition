@@ -1,5 +1,5 @@
 # Sketch Recognition
-This repository contains a Keras model for Google's quickdraw dataset to classify sketches, an Android app for demonstration and describes the whole workflow to integrate a custom model to an Android app applaying [Tensorflow Lite][4]
+This repository contains a Keras model for Google's quickdraw dataset to classify sketches, an Android app for demonstration and describes the whole workflow to integrate a custom model to an Android app applaying [Tensorflow Lite][4].
 
 #### Global project structure:
 

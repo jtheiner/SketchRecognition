@@ -26,10 +26,8 @@ I used a CNN architecture presented by [Tensorflow's MNIST tutorial][2] with a f
 
 The much higher top-3 accuracy using 345 classes is justified by the fact that there are some quite similar classes inside the dataset.
 
-
 ###### Confusion matrix for 20 classes:
-
-![Confusion matrix 20 classes](/SketchRecognition/recognition/models/20/10000//confusion_matrix.png) 
+<img src="/SketchRecognition/recognition/models/20/10000//confusion_matrix.png" width="800">
 
 # To reproduce the presented results use this instruction
 
@@ -41,7 +39,7 @@ like dataset download, dataset instances reduction and dataset split in train an
 for all generated results (training process, images, frozen model, list of labels).
 
 #### How to prepare the dataset:
-1. Download the full dataset (ca. 40GB) using "download.sh" or download a subset manually (<https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap>)
+1. Download the full dataset (ca. 40GB) via script or download a subset manually (<https://console.cloud.google.com/storage/browser/quickdraw_dataset/full/numpy_bitmap>)
 and put the files into the "dataset" directory.
 
 2. Adapt the parameters in "split_train_test.py" to setup the directories, to reduce
@@ -60,8 +58,7 @@ Keras version 2.2.0
 Tensorflow version 1.8.0  
 
 # Android App
-
-![Screenshot Android app](/Android/app.png) 
+<img src="/Android/app.png" width="250">
 
 ## The Model Conversion and Integration Task
 #### How to convert the frozen Keras model to Tensorflow Lite:
